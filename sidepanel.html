@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrowserOS AI Side Panel</title>
+  <link rel="stylesheet" href="sidepanel.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-dot"></div>
+        <span>BrowserOS AI</span>
+      </div>
+      <button id="newTaskBtn" class="ghost-btn">Yeni</button>
+    </header>
+
+    <section class="status-card">
+      <div class="status-label">Aktif sayfa</div>
+      <div id="currentUrl" class="status-url">Yükleniyor...</div>
+    </section>
+
+    <section class="quick-actions">
+      <button class="action-btn" data-action="summarize">Sayfayı özetle</button>
+      <button class="action-btn" data-action="extract">Veri çıkar</button>
+      <button class="action-btn" data-action="mcp">MCP araçları</button>
+      <button class="action-btn" data-action="voice">Sesli komut</button>
+    </section>
+
+    <main class="messages" id="messages"></main>
+
+    <form id="chatForm" class="composer">
+      <textarea id="promptInput" rows="3" placeholder="Sorunu sor, sayfayı incele, formu doldur..."></textarea>
+      <div class="composer-actions">
+        <button type="button" id="attachBtn" class="ghost-btn small">Ekle</button>
+        <button type="submit" class="send-btn">Gönder</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

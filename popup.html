@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrowserOS AI</title>
+  <style>
+    body {
+      margin: 0;
+      min-width: 260px;
+      min-height: 180px;
+      padding: 16px;
+      font-family: Inter, Arial, sans-serif;
+      background: #0b1020;
+      color: #e5e7eb;
+    }
+
+    .popup-box {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    button {
+      background: linear-gradient(135deg, #4f8cff, #7c5cff);
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-weight: 700;
+      padding: 10px 12px;
+      cursor: pointer;
+    }
+
+    .muted {
+      color: #94a3b8;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-box">
+    <div class="title">BrowserOS AI</div>
+    <div class="muted">Sayfa hakkında kısa özet al, verileri çıkar ve paneli aç.</div>
+    <button id="openPanelBtn">Asistanı aç</button>
+    <button id="summaryBtn">Sayfayı özetle</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

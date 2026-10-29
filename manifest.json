@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "BrowserOS AI Assistant",
   "version": "0.1.0",
-  "description": "BrowserOS-style AI assistant for browsing, page understanding, and MCP-ready tools.",
+  "description": "BrowserOS-style AI assistant for browsing and page understanding.",
   "permissions": [
     "storage",
     "tabs",
@@ -28,12 +28,6 @@
       "matches": ["<all_urls>"],
       "js": ["content.js"],
       "run_at": "document_idle"
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": ["assets/*"],
-      "matches": ["<all_urls>"]
     }
   ]
 }
